@@ -1,0 +1,8 @@
+[alias]
+vb = ["build", "--message-format=json-render-diagnostics"]
+
+[build]
+target = "armv7a-sony-psvita"
+# rustflags = ["-Clink-args=-L /home/zeta/.vitasdk/arm-vita-eabi/lib --script /home/zeta/dev/rust-psvita/link.ld"]
+# rustflags = ["-Clink-args=-L /home/zeta/.vitasdk/arm-vita-eabi/lib /home/zeta/dev/rust-psvita/crt0.o"]
+rustflags = ["-Clink-args=-L /home/zeta/.vitasdk/arm-vita-eabi/lib"]

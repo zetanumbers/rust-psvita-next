@@ -1,0 +1,13 @@
+[package]
+name = "psp2"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+libc = { version = "0.2.126", features = ["extra_traits"] }
+# lock_api = "0.4.7"
+# rand = { version = "0.8.5", default-features = false, features = ["std_rng", "getrandom", "libc"] }
+
+[patch.crates-io]
+libc = { path = "/home/zeta/dev/rust-libc" }
+# getrandom = { path = "/home/zeta/dev/getrandom" }
